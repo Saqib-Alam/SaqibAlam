@@ -9,7 +9,7 @@ const styles = {
     // backgroundColor: '#0E1525',
     backgroundColor: '#1E293B',
     color: '#ffffff',
-    marginTop: '80px',
+    marginTop: '120px',
     paddingBottom: "40px"
   },
 
@@ -47,6 +47,10 @@ const projectDetails = {
     title: "Saqib Alam",
     logo: "images/saqibalam/saqibSS1.png", 
   },
+  realstate: {
+    title: "Realstate",
+    logo: "images/realstate/realstateSS1.png",
+  },
   softite: {
     title: "Softite",
     logo: "images/softite/softiteSS1.png",
@@ -55,6 +59,14 @@ const projectDetails = {
     title: "MotorSport",
     logo: "images/motorsport/motorsportSS1.png",
   },
+};
+
+const wordpressProjects= {
+  healdom: {
+    title: "Healdom Nutrition",
+    logo: "images/healdom/healdomSS1.png", 
+  },
+
 };
 
 const Projects = () => {
@@ -75,6 +87,29 @@ const Projects = () => {
                 <Link key={projectName} to={`${projectName}`}>
                   <Box key={projectName} sx={{ ...styles.innerContainer, ...styles.transitionAll }}>
                     <Box component='img' sx={{ ...styles.boxes }} src={projectDetails[projectName].logo} />
+                  </Box>
+                </Link>
+              </Grid>
+            ))
+          }
+
+        </Grid >
+
+        {/* ----------------------------------------------- */}
+
+        <Grid container spacing={4} sx={styles.grid}>
+          <Grid item xs={12}>
+            <Typography variant='h3' sx={styles.title} align='center'>
+              Wordpress Projects
+            </Typography>
+          </Grid>
+
+          {
+            Object.keys(wordpressProjects).map((projectName) => (
+              <Grid item xs={12} sm={6} sx={styles.outer}>
+                <Link key={projectName} to={`${projectName}`}>
+                  <Box key={projectName} sx={{ ...styles.innerContainer, ...styles.transitionAll }}>
+                    <Box component='img' sx={{ ...styles.boxes }} src={wordpressProjects[projectName].logo} />
                   </Box>
                 </Link>
               </Grid>

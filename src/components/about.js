@@ -7,7 +7,8 @@ const styles = {
   main: {
     position: 'relative',
     left: '0px',
-    top: '0px'
+    top: '0px',
+    marginTop: "80px"
   },
   background: {
     backgroundColor: '#1E293B',

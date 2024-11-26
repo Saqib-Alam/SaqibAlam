@@ -111,8 +111,8 @@ const Header = () => {
             </Typography>
 
             <Box>
-              <Buttons sx={styles.button} text="Download Resume" />
-              <Buttons sx={styles.button} text="Contact Me" />
+              <Buttons sx={styles.button} target="_blank" href="https://drive.google.com/file/d/1UrKxrpNc7J2a7rtMFNLp-6rJze4HmPEj/view?usp=sharing" text="Download Resume" />
+              <Buttons sx={styles.button} href="mailto:saqibalam64@gmail.com" text="Contact Me" />
             </Box>
             {/* <Button variant="outlined">Contact Us</Button> */}
           </Container>

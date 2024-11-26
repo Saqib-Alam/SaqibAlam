@@ -71,7 +71,7 @@ const Footer = () => {
                     </Grid>
                     <Grid item md={4} xs={12}>
                         <Typography variant='h6' sx={styles.text}>
-                            &copy; Copyright 2023 <Typography sx={{ color: '#F97316' }} component='span'>Saqib Alam.</Typography> All Rights Reserved.
+                            &copy; Copyright 2024 <Typography sx={{ color: '#F97316' }} component='span'>Saqib Alam.</Typography> All Rights Reserved.
                         </Typography>
                     </Grid>
                 </Grid>

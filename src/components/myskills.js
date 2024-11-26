@@ -3,9 +3,11 @@ import React from 'react'
 import HTML from '../Assets/skills/html.png'
 import CSS from '../Assets/skills/css.png'
 import JS from '../Assets/skills/js.png'
+import PHP from '../Assets/skills/php.png'
 import BOOTSTRAP from '../Assets/skills/bootstrap.svg'
 import REACTJS from '../Assets/skills/reactjs.png'
 import GITHUB from '../Assets/skills/github.png'
+import WP from '../Assets/skills/Wordpresslogo.png'
 import FIREBASE from '../Assets/skills/firebase.png'
 import VSCODE from '../Assets/skills/VSCode.webp'
 import MUI from '../Assets/skills/mui.svg'
@@ -115,6 +117,14 @@ const Myskills = () => {
             </Grid>
             <Grid item xs={6} sm={4} md={3} sx={styles.outer}>
               <Box sx={{ ...styles.innerContainer, ...styles.innerContainerHover }}>
+                <Box component='img' sx={styles.boxes} src={PHP} />
+                <Typography variant='h5' sx={styles.tech}>
+                  PHP
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={6} sm={4} md={3} sx={styles.outer}>
+              <Box sx={{ ...styles.innerContainer, ...styles.innerContainerHover }}>
                 <Box component='img' sx={styles.boxes} src={REACTJS} />
                 <Typography variant='h5' sx={styles.tech}>
                   React JS
@@ -126,6 +136,14 @@ const Myskills = () => {
                 <Box component='img' sx={styles.boxes} src={MUI} />
                 <Typography variant='h5' sx={styles.tech}>
                   Material UI
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={6} sm={4} md={3} sx={styles.outer}>
+              <Box sx={{ ...styles.innerContainer, ...styles.innerContainerHover }}>
+                <Box component='img' sx={styles.boxes} src={WP} />
+                <Typography variant='h5' sx={styles.tech}>
+                  Wordpress
                 </Typography>
               </Box>
             </Grid>
